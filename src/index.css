@@ -1,0 +1,40 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: black;
+  color: white;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.flex{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap: 2rem;
+}
+
+.item{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1.5px solid greenyellow;
+  transition: transform 0.5s ease;
+  border-radius: 1rem;
+}
+
+.item img:hover{
+  transform: scale(1.1);
+}
